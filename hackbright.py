@@ -32,8 +32,8 @@ def get_student_by_github(github):
 
     row = db_cursor.fetchone()
 
-    print "Student: {first} {last}".format(first=row[0], last=row[1])
-    print "GitHub account: {acct}".format(acct=row[2])
+    # print "Student: {first} {last}".format(first=row[0], last=row[1])
+    # print "GitHub account: {acct}".format(acct=row[2])
 
     return row
 
@@ -203,7 +203,7 @@ def handle_input():
 if __name__ == "__main__":
     connect_to_db(app)
 
-    handle_input()
+    #handle_input()
 
     # To be tidy, we'll close our database connection -- though, since this
     # is where our program ends, we'd quit anyway.

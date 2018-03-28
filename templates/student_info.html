@@ -4,9 +4,13 @@
     <title>Student Info</title>
 </head>
 <body>
-  <h1>{{ row[0] }}</h1>
+  <h1>{{ first }} {{ last }}</h1>
 
-  <p>Description: {{ row[1] }}</p>
-  <p>Max Grade: {{ row[2] }}
+  <p><b>Github:</b> {{ github }}</p>
+  <ul>
+    {% for project in grades %}
+    <li><b>Project:</b> {{ project[0] }} &nbsp; <b>Grade:</b> {{ project[1] }}</li>
+    {% endfor%}
+  </ul>
 </body>
 </html>
