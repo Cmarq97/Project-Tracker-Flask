@@ -12,7 +12,8 @@
     <ul>
     {% for student in grades %}
     <li><b>Student: </b>
-        <a href="http://localhost:5000/student?github={{ student[0] }}">{{ student[0] }}</a> &nbsp; <b>Grade:</b> {{ student[1] }}</li>
+        <a href="http://localhost:5000/student?github={{ student[0] }}">
+            {{ student[0] }}</a> &nbsp; <b>Grade:</b> {{ student[1] }}</li>
     {% endfor%}
   </ul>
 </body>

@@ -6,6 +6,12 @@ import hackbright
 
 app = Flask(__name__)
 
+@app.route("/")
+def homepage()::
+  """Homepage."""
+
+  
+
 
 @app.route("/student")
 def get_student():
