@@ -130,9 +130,9 @@ def get_grades_by_github(github):
 
     rows = db_cursor.fetchall()
 
-    for row in rows:
-        print "Student {acct} received grade of {grade} for {title}".format(
-            acct=github, grade=row[1], title=row[0])
+    # for row in rows:
+    #     print "Student {acct} received grade of {grade} for {title}".format(
+    #         acct=github, grade=row[1], title=row[0])
 
     return rows
 
@@ -150,9 +150,9 @@ def get_grades_by_title(title):
 
     rows = db_cursor.fetchall()
 
-    for row in rows:
-        print "Student {acct} received grade of {grade} for {title}".format(
-            acct=row[0], grade=row[1], title=title)
+    # for row in rows:
+    #     print "Student {acct} received grade of {grade} for {title}".format(
+    #         acct=row[0], grade=row[1], title=title)
 
     return rows
 

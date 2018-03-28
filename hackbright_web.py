@@ -39,7 +39,9 @@ def get_project():
 
     project = hackbright.get_project_by_title(title)
 
-    html = render_template("project_info.html", project=project)
+    completed_projects = hackbright.get_grades_by_title(title)
+
+    html = render_template("project_info.html", project=project, grades=completed_projects)
 
     return html
 

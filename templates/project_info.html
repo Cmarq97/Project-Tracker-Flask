@@ -7,5 +7,12 @@
   <h1>{{ project[0] }}</h1>
     <p><b>Description:</b> <i>{{ project[1] }}</i></p>
     <p><b>Max Grade:</b> {{ project[2] }}</p>
+
+    <p><b> Students That Have Completed {{ project[0] }}:</p></b>
+    <ul>
+    {% for student in grades %}
+    <li><b>Student:</b> {{ student[0] }} &nbsp; <b>Grade:</b> {{ student[1] }}</li>
+    {% endfor%}
+  </ul>
 </body>
 </html>
